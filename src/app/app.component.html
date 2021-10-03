@@ -1,0 +1,19 @@
+<nav class="navbar navbar-dark">
+  <div class="d-flex flex-row">
+      <div>
+          <p class="head">Simple Angular To-Do-List</p>
+      </div>
+  </div>
+</nav>
+<section>
+  <div class="block-custom">
+      <form>
+          <div>
+              <input placeholder="Add a new task" name="taskname" [(ngModel)]="textValue">
+              <button class="btn btn-primary" [disabled]="!textValue.length" (click)="addTask()">Add Task</button>
+          </div>
+      </form>
+      <app-list [Items]="Items" (checkEvent)="checkVal($event)"></app-list>
+      <button (click)="clear()">Clear completed tasks</button>
+  </div>
+</section>
