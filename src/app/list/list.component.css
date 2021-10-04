@@ -84,6 +84,8 @@ input[type=checkbox]:checked+label:after {
 ul {
     margin: 0 0 24px;
     border-top: 1px solid #ededed;
+    list-style: none;
+    padding-left: 0px;
 }
 
 ul li {
